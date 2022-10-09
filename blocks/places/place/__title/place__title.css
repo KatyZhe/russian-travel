@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'InterBlack';
+  src: url(../../../../vendor/Inter-Black.woff) format("woff");
+}
+
+.place__title {
+  margin: 0;
+  padding: 0;
+  grid-area: title;
+  font-family: 'InterBlack';
+  font-style: normal;
+  font-weight: 900;
+  color: #FFF;
+}
+
+@media screen and (min-width: 1280px) {
+  .place__title {
+    width: 460px;
+    font-size: 72px;
+    line-height: 1.06;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .place__title {
+    width: 440px;
+    font-size: 72px;
+    line-height: 1.06;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .place__title {
+    width: 340px;
+    font-size: 42px;
+    line-height: 1.09;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .place__title {
+    width: 288px;
+    font-size: 32px;
+    line-height: 1.09;
+  }
+}
