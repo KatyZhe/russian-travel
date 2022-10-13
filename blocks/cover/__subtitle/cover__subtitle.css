@@ -1,50 +1,14 @@
-@font-face {
-  font-family: 'InterRegular';
-  src: url(../../../vendor/Inter-Regular.woff) format('woff');
-}
-
 .cover__subtitle {
-  position: absolute;
-  z-index: 2;
-  font-family: 'InterRegular';
+  font-family: 'Inter', Verdana, Tahoma;
   text-align: center;
-  font-weight: 400;
+  font-weight: normal;
   color: #FFF;
-  margin: auto;
+  padding: 0;
+  z-index: 3;
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:768px) {
   .cover__subtitle {
-    margin: 429px auto 0 auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 360px;
-    height: 66px;
-    font-size: 18px;
-    line-height: 1.22;
-  }
-}
-
-@media screen and (min-width:1024px) and (max-width:1280px) {
-  .cover__subtitle {
-    margin: 381px auto 0 auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 360px;
-    height: 66px;
-    font-size: 18px;
-    line-height: 1.22;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1024px) {
-  .cover__subtitle {
-    margin: 299px auto 0 auto;
-    left: 0;
-    right: 0;
-    text-align: center;
     width: 360px;
     height: 66px;
     font-size: 18px;
@@ -54,10 +18,6 @@
 
 @media screen and (min-width:320px) and (max-width:768px) {
   .cover__subtitle {
-    margin: 119px auto 0 auto;
-    left: 0;
-    right: 0;
-    text-align: center;
     width: 288px;
     height: 48px;
     font-size: 14px;

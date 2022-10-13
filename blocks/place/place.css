@@ -1,9 +1,8 @@
 .place {
   display: grid;
   margin: 0 auto 80px;
+  min-height: minmax(min-content, max-content);
 }
-
-/* Со второго place для однострочных заголовков появляется отступ для grid-ячейки. И у изображения тоже. Направьте пожалуйста в сторону решения проблемы - как от этого отступа избавиться? */
 
 .place:last-child {
   margin-bottom: 92px;
@@ -12,36 +11,31 @@
 @media screen and (min-width: 1280px) {
   .place {
     grid-template-columns: 1fr 460px;
-    grid-template-rows: fit-content 460px;
     gap: 48px 40px;
     max-width: 984px;
-    min-height: 660px;
-    grid-template-areas:
-      "title website"
-      "image paragraph";
+
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .place {
     grid-template-columns: 1fr 440px;
-    grid-template-rows: fit-content 440px;
     gap: 48px 32px;
     max-width: 928px;
-    min-height: 564px;
-    grid-template-areas:
-      "title website"
-      "image paragraph";
   }
 }
 
 @media screen and (min-width:768px) and (max-width: 1024px) {
   .place {
     grid-template-columns: 1fr 340px;
-    grid-template-rows: fit-content 340px;
     gap: 48px 28px;
     max-width: 720px;
-    min-height: 484px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .place {
+    grid-template-rows: repeat(2, minmax(min-content, max-content));
     grid-template-areas:
       "title website"
       "image paragraph";
@@ -51,10 +45,9 @@
 @media screen and (min-width:320px) and (max-width: 768px) {
   .place {
     grid-template-columns: 320px;
-    grid-template-rows: fit-content fit-content fit-content 320px;
+    grid-template-rows: repeat(4, minmax(min-content, max-content));
     gap: 32px;
     max-width: 320px;
-    min-height: 1016px;
     grid-template-areas:
       "title"
       "website"
