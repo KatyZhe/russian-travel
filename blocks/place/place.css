@@ -5,8 +5,14 @@
 @media screen and (min-width: 1280px) {
   .place {
     gap: 48px 40px;
-    min-width: 984px;
-    margin: 0 148px 102px 148px;
+    max-width: 984px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+
+  .place:last-child {
+    margin-bottom: 102px;
   }
 }
 
