@@ -13,6 +13,10 @@
   margin-bottom: 0;
 }
 
+.place:last-child .place__paragraph {
+  margin: 0;
+}
+
 @media screen and (min-width: 1280px) {
   .place__paragraph:first-child {
     margin-bottom: 26px;
