@@ -1,23 +1,23 @@
 @media screen and (min-width: 1280px) {
   .intro {
-    max-width: 1184px;
-    min-width: 1184px;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 92px;
+    max-width: 984px;
+    min-width: 984px;
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .intro {
     margin-left: 48px;
-    margin-bottom: 92px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .intro {
-    max-width: 690px;
+    max-width: 984px;
+    min-width: 928px;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 92px;
   }
 }
 

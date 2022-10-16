@@ -6,9 +6,7 @@
   .place {
     gap: 48px 40px;
     max-width: 984px;
-    margin: auto;
-    margin-top: 0;
-    margin-bottom: 80px;
+    min-width: 984px;
   }
 
   .place:last-child {
@@ -20,7 +18,8 @@
   .place {
     gap: 48px 32px;
     min-width: 928px;
-    margin: 0 48px 80px 48px;
+    max-width: 928px;
+
   }
 
   .place:last-child {
@@ -28,11 +27,20 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .place {
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 80px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .place {
     gap: 48px 28px;
     min-width: 720px;
-    margin: 0 24px 73px 24px;
+    max-width: 720px;
+    margin: 0 auto 73px;
   }
 
   .place:last-child {

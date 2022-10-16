@@ -17,4 +17,4 @@
 
 **Ссылка на проект на github.com**
 
-* https://github.com/KatyZhe/russian-travel.git
+* https://KatyZhe.github.io/russian-travel/
